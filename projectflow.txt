@@ -1,0 +1,44 @@
+1.  create git hub repo and clone it-git clone "your link"
+
+2.  make virtual enviornment and activate it 
+        python virtual enviornment- python -m venv myenv
+        delete python virtual enviornment-  rmdir /s /q myenv
+        list down python enviornment- you cannot list down python enviornment
+        but Manually check python enviornment where you created them- dir /s /b venv
+        activate python enviornment- myenv\Scripts\activate
+        deactivate python enviornment- deactivate
+        conda virtual enviornment- conda create -n myenv python=3.10
+        delete conda virtual enviornment- conda remove --name myenv --all
+        list down conda enviornment- conda info --envs
+        activate conda enviornment- conda activate myenv
+        deactivate conda enviornment- deactivate
+
+
+3.  create requirements.txt file,add below requirements and install them- pip install -r requirements.txt
+        langchain
+        langchain-openai
+        streamlit
+        openai
+        fastapi
+        uvicorn
+
+2.  create src folder and in it make required folder and add add their code
+
+3. create data folder and add their code
+
+4. for running the fast api file locally code-  uvicorn src.api.fastapi_app:app --reload
+
+5. open one more terminal and run streamlit code for local use- streamlit run src/ui/streamlit_app.py
+
+6. now make docker file and add its code 
+
+7. pip install docker and open docker app in background
+
+8. freeze requirements- pip freeze > requirements.txt
+
+8. docker image-  docker build -t docquery-app .
+
+9. run image in docker container- docker run -p 8000:8000 -p 8501:8501 --env-file .env docquery-app
+
+ 
+
