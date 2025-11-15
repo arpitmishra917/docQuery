@@ -36,9 +36,34 @@
 
 8. freeze requirements- pip freeze > requirements.txt
 
-8. docker image-  docker build -t docquery-app .
+8.build docker image locally-  docker build -t docquery-app .
 
-9. run image in docker container- docker run -p 8000:8000 -p 8501:8501 --env-file .env docquery-app
+9. run image in docker container locally- docker run -p 8000:8000 -p 8501:8501 --env-file .env docquery-app
 
- 
+10. create ecr repo on aws
 
+11. create ec2 machine on aws
+
+12. Open EC2 and Install docker in EC2 Machine by running below code
+                #optinal
+        sudo apt-get update -y
+        sudo apt-get upgrade
+
+                #required
+        curl -fsSL https://get.docker.com -o get-docker.sh
+        sudo sh get-docker.sh
+        sudo usermod -aG docker ubuntu
+
+13. add commit and push all your code to github
+
+14. now connect your github repositry to your ec2 machine steps are written below
+        setting>actions>runner>new self hosted runner> choose os> then run command one by one
+        while doing this one step will come where it will ask for "enter the name of the runner" type there- self-hosted
+
+15. Setup github secrets
+        AWS_ACCESS_KEY_ID
+        AWS_SECRET_ACCESS_KEY
+        AWS_DEFAULT_REGION
+        ECR_REPO
+        PINECONE_API_KEY
+        OPENAI_API_KEY
