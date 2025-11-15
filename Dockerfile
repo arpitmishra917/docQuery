@@ -11,7 +11,7 @@ COPY src/ src/
 COPY data/ data/
 
 # Install dependencies
-RUN RUN pip install --upgrade pip pip install -r requirements.txt
+RUN RUN pip install --upgrade pip && pip install -r requirements.txt
 
 # Expose ports
 EXPOSE 8000
