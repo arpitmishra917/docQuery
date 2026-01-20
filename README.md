@@ -26,4 +26,3 @@ Deployed as a **scalable web application** on AWS with Dockerized services and a
 
 ---
 
-## 📂 Project Structure
