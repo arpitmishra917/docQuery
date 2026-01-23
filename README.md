@@ -1,28 +1,41 @@
-# DocQuery – PDF Question Answering System 📄🤖
-
-An AI-powered application that allows users to **upload PDFs and perform semantic question answering**.  
-Built with **embedding-based retrieval** to ensure accurate, context-aware responses.  
-Deployed as a **scalable web application** on AWS with Dockerized services and a **Streamlit UI**.
+# 📑 DocQuery – PDF Question Answering System
 
 [Live Demo](https://huggingface.co/spaces/arpitmishra917/docQuery)
 
----
-
-## ✨ Features
-- **PDF Upload & Q&A**: Upload documents and ask natural language questions.
-- **Semantic Retrieval**: Embedding-based search for precise, context-aware answers.
-- **Streamlit UI**: Simple and interactive interface for users.
-- **Scalable Deployment**: Dockerized services deployed on AWS EC2.
-- **CI/CD Pipeline**: Automated builds & deployments via GitHub Actions.
+## 📌 Overview
+DocQuery is an AI application that enables users to upload PDFs and ask semantic questions about their content.  
+It uses **embedding-based retrieval** with a **Vector Database** to deliver context-aware answers.  
+The system is powered by **LangChain** and **LLMs**, features a **Streamlit interface** for interactive use, and provides **FastAPI REST APIs** for integration.  
+Deployed on **AWS EC2** with **Docker** and automated via **GitHub Actions CI/CD**.
 
 ---
 
 ## 🛠 Tech Stack
-- **Languages & Frameworks**: Python, FastAPI, Streamlit  
-- **LLM Orchestration**: LangChain  
-- **Database**: Vector DB  
-- **Infrastructure**: Docker, AWS EC2  
-- **CI/CD**: GitHub Actions  
+- **Python** – Core programming language
+- **LLMs (Large Language Models)** – Semantic understanding
+- **LangChain** – Orchestration of retrieval + LLM pipeline
+- **Vector DB (FAISS / Pinecone)** – Embedding-based retrieval
+- **Streamlit** – User interface
+- **FastAPI** – REST API framework
+- **Docker** – Containerization
+- **AWS EC2** – Cloud deployment
+- **GitHub Actions** – CI/CD automation
 
 ---
 
+## ⚙️ Features
+- Upload PDFs and query them in natural language
+- Embedding-based retrieval for accurate context-aware answers
+- Streamlit interface for interactive usage
+- REST API endpoints for external integration
+- Scalable deployment with Docker & AWS
+- Automated CI/CD pipeline with GitHub Actions
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/your-username/docquery.git
+cd docquery
