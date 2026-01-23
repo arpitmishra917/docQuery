@@ -4,7 +4,7 @@ An AI-powered application that allows users to **upload PDFs and perform semanti
 Built with **embedding-based retrieval** to ensure accurate, context-aware responses.  
 Deployed as a **scalable web application** on AWS with Dockerized services and a **Streamlit UI**.
 
-🔗 **Live Demo:** [http://16.171.175.192:8501/](http://16.171.175.192:8501/)
+🔗 **Live Demo:** [[http://16.171.175.192:8501/](http://16.171.175.192:8501/](https://huggingface.co/spaces/arpitmishra917/docQuery ))
 
 ---
 
